@@ -1,7 +1,8 @@
-package br.com.gearcode.tutorials.pesssoasms.repo;
+package br.com.demo.spring.mongo.repo;
 
-import br.com.gearcode.tutorials.pesssoasms.entity.IPessoa;
 import org.springframework.data.mongodb.repository.MongoRepository;
+
+import br.com.demo.spring.mongo.entity.IPessoa;
 
 /**
  * Created by luan on 19/09/17.

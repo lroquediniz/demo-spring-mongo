@@ -1,11 +1,11 @@
-package br.com.gearcode.tutorials.pesssoasms.web;
+package br.com.demo.spring.mongo.web;
 
 
-import br.com.gearcode.tutorials.pesssoasms.entity.IPessoa;
-import br.com.gearcode.tutorials.pesssoasms.entity.Pessoa;
-import br.com.gearcode.tutorials.pesssoasms.entity.PessoaFisica;
-import br.com.gearcode.tutorials.pesssoasms.entity.PessoaJuridica;
-import br.com.gearcode.tutorials.pesssoasms.repo.PessoasRepository;
+import br.com.demo.spring.mongo.entity.IPessoa;
+import br.com.demo.spring.mongo.entity.Pessoa;
+import br.com.demo.spring.mongo.entity.PessoaFisica;
+import br.com.demo.spring.mongo.entity.PessoaJuridica;
+import br.com.demo.spring.mongo.repo.PessoasRepository;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
