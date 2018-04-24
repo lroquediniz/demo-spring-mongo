@@ -1,20 +1,19 @@
 package br.com.demo.spring.mongo.web;
 
 
-import br.com.demo.spring.mongo.entity.IPessoa;
-import br.com.demo.spring.mongo.entity.Pessoa;
-import br.com.demo.spring.mongo.entity.PessoaFisica;
-import br.com.demo.spring.mongo.entity.PessoaJuridica;
-import br.com.demo.spring.mongo.repo.PessoasRepository;
-import lombok.extern.slf4j.Slf4j;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.*;
-
-import java.util.Date;
 import java.util.List;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RestController;
+
+import br.com.demo.spring.mongo.entity.IPessoa;
+import br.com.demo.spring.mongo.repo.PessoasRepository;
+
 @RestController
-@Slf4j
 @RequestMapping("/pessoas")
 public class PessoaFisicaController {
 
@@ -29,20 +28,20 @@ public class PessoaFisicaController {
 
     @RequestMapping(method = RequestMethod.GET)
     public List<IPessoa> findAllBooks() {
-        PessoaFisica p = new PessoaFisica();
-        p.setCpf("00000000000001");
+        /*PessoaFisica p = new PessoaFisica();
+        p.setCpf("00000000000003");
         p.setPessoa(new Pessoa());
         p.getPessoa().setDataNascimento(new Date());
         p.getPessoa().setNome("PAULO ANDRADE");
         repository.save(p);
 
         PessoaJuridica pessoaJuridica = new PessoaJuridica();
-        pessoaJuridica.setCnpj("000000000000002");
+        pessoaJuridica.setCnpj("000000000000004");
         pessoaJuridica.setPessoa(new Pessoa());
         pessoaJuridica.getPessoa().setDataNascimento(new Date());
         pessoaJuridica.getPessoa().setNome("Google");
         pessoaJuridica.setRazaoSocial("GOOGLE");
-        repository.save(pessoaJuridica);
+        repository.save(pessoaJuridica);*/
 
         return repository.findAll();
     }
